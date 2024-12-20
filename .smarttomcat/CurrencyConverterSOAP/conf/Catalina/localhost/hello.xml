@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="/home/wadii/apache-tomcat-10.1.19/webapps">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="/mnt/f426c230-1d6d-4aa2-8096-1fea3324ab4a/WS-project/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.0/jakarta.xml.ws-api-4.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.xml.ws-api-4.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.xml.bind-api-4.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.0/jakarta.xml.soap-api-3.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.xml.soap-api-3.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/ws/jaxws-rt/4.0.0/jaxws-rt-4.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jaxws-rt-4.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.0/jaxb-impl-4.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jaxb-impl-4.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.0/jaxb-core-4.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jaxb-core-4.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/ha-api-3.1.13.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/glassfish/external/management-api/3.2.3/management-api-3.2.3.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/management-api-3.2.3.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/glassfish/gmbal/gmbal-api-only/4.0.3/gmbal-api-only-4.0.3.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/gmbal-api-only-4.0.3.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/jvnet/staxex/stax-ex/2.1.0/stax-ex-2.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/stax-ex-2.1.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/stream/buffer/streambuffer/2.1.0/streambuffer-2.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/streambuffer-2.1.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/jvnet/mimepull/mimepull/1.10.0/mimepull-1.10.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mimepull-1.10.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/2.1.0/FastInfoset-2.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/FastInfoset-2.1.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.0/jakarta.mail-api-2.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.mail-api-2.1.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/eclipse/angus/angus-activation/1.0.0/angus-activation-1.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/angus-activation-1.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/eclipse/angus/angus-mail/1.0.0/angus-mail-1.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/angus-mail-1.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/3.0.0/saaj-impl-3.0.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/saaj-impl-3.0.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.8/woodstox-core-6.2.8.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/woodstox-core-6.2.8.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/stax2-api-4.2.1.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.activation-api-2.1.0.jar"/>
+    <PostResources base="/home/wadii/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.annotation-api-2.1.1.jar"/>
+  </Resources>
+</Context>

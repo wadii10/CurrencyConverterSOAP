@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="/home/wadii/apache-tomcat-10.1.19/webapps">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="/mnt/f426c230-1d6d-4aa2-8096-1fea3324ab4a/ExerciceApplicationSoap/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+  </Resources>
+</Context>

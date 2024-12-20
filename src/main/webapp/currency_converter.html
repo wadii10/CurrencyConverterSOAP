@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <script>
+    function convertCurrency() {
+        const amount = document.getElementById("amount").value;
+        const currency = document.getElementById("currency").value;
+
+        // Prepare the SOAP request body
+        const soapRequest = `<?xml version="1.0" encoding="UTF-8"?>
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                              xmlns:web="http://service.glid3.iit.tn/">
+               <soapenv:Header/>
+               <soapenv:Body>
+                  <web:convert>
+                     <web:currency>${currency}</web:currency>
+                     <web:amount>${amount}</web:amount>
+                  </web:convert>
+               </soapenv:Body>
+            </soapenv:Envelope>`;
+
+        // Send SOAP request using fetch
+        fetch('http://localhost:8085/webapp/currencyconverter', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'text/xml',
+                'SOAPAction': 'http://service.glid3.iit.tn/convert'
+            },
+            body: soapRequest
+        })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+            // Parse the response (depending on the response structure)
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+            const result = xmlDoc.getElementsByTagName("return")[0].textContent;
+            document.getElementById("result").innerText = `Converted Amount: ${result}`;
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+  </script>
+</head>
+<body>
+<h1>Currency Converter</h1>
+<form onsubmit="event.preventDefault(); convertCurrency();">
+  <label for="amount">Amount in Euros:</label>
+  <input type="number" id="amount" required>
+
+  <label for="currency">Currency:</label>
+  <select id="currency">
+    <option value="USD">USD</option>
+    <option value="GBP">GBP</option>
+    <option value="JPY">JPY</option>
+    <!-- Add other currencies here -->
+  </select>
+
+  <button type="submit">Convert</button>
+</form>
+
+<div id="result"></div>
+</body>
+</html>
